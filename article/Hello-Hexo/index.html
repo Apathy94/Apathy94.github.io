@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keyword"  content="">
+    <meta name="description" content="测试一下">
+    <meta name="keyword"  content="good">
     <link rel="shortcut icon" href="/img/ironman-draw.png">
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -74,6 +74,10 @@
             background-image: url('hexo-github.png')
             /*post*/
         
+    }
+    
+    #signature{
+        background-image: url('/img/signature/Apathy-white.png');
     }
     
 </style>
@@ -222,7 +226,7 @@
 </blockquote>
 <p>安装完毕，可以在命令行工具中输入相应命令进行验证，若出现版本号，则证明安装成功</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git version</span><br><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-<p><img src="./Hello-Hexo/yanzheng.png" alt="avatar"></p>
+<p><img src="https://i.loli.net/2019/07/02/5d1b00dfb9f6a66848.png" alt="yanzheng.png"></p>
 <h1 id="安装hexo">安装Hexo</h1>
 <p>环境已经准备好了，接下来可以使用 npm 开始安装 Hexo 了。也可查看 <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a> 的详细文档。<br>
 在命令行输入执行以下命令：</p>
@@ -231,13 +235,13 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml # 网站的配置信息，您可以在此配置大部分的参数。 </span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds # 模版文件夹</span><br><span class="line">├── source  # 资源文件夹，除 _posts 文件，其他以下划线_开头的文件或者文件夹不会被编译打包到public文件夹</span><br><span class="line">|   ├── _drafts # 草稿文件</span><br><span class="line">|   └── _posts # 文章Markdowm文件 </span><br><span class="line">└── themes  # 主题文件夹</span><br></pre></td></tr></table></figure>
 <p>好了，如果上面的命令都没报错的话，就恭喜了，运行 hexo s 命令，其中 s 是 server 的缩写，在浏览器中输入 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 回车就可以预览效果了。</p>
 <p>以下是我本地的预览效果，更换了 next 主题的，默认不是这个主题。<br>
-<img src="./Hello-Hexo/MyBlog_bd.png" alt="avatar"></p>
+<img src="https://i.loli.net/2019/07/02/5d1b00ecbc16590226.png" alt="MyBlog_bd.png"></p>
 <p>至此，你本地的博客就已经搭建成功，接下来就是部署到 Github Page 了。</p>
 <h1 id="注册github">注册Github</h1>
 <p>若你还没有Github，可以先去自行注册一个。<br>
 现在你已经又一个Github账号，那么点击 Start project 或者下面的 new repository 创建一个新的仓库。</p>
 <p>[注意]Github 仅能使用一个同名仓库的代码托管一个静态站点。例如我的Github账户名是Apathy94，那么我的仓库名必须是<code>Apathy94.github.io</code>。</p>
-<p><img src="./Hello-Hexo/Cangku.png" alt="avatar"><br>
+<p><img src="https://i.loli.net/2019/07/02/5d1b00dfb9d2141027.png" alt="Cangku.png"><br>
 因为我已经创建过了，所以这边会有红色感叹号。</p>
 <h1 id="配置ssh-key">配置SSH Key</h1>
 <p>要使用 git 工具首先要配置一下SSH key，为部署本地博客到 Github 做准备。</p>
@@ -252,11 +256,11 @@
 <p>再输入<code>ssh-add ~/.ssh/id_rsa</code>，添加生成的SSH key到ssh-agent。</p>
 <p>打开github，在头像下面点击settings，再点击SSH and GPG keys，新建一个SSH，名字随便。</p>
 <p>输入<code>ssh -T git@github.com</code>，如果如下图所示，出现你的用户名，那就成功了。</p>
-<p><img src="./Hello-Hexo/success.png" alt="avatar"></p>
+<p><img src="https://i.loli.net/2019/07/02/5d1b00def17cd75296.png" alt="success.png"></p>
 <h1 id="部署到-github">部署到 Github</h1>
 <p>此时，本地和Github的工作做得差不了，部署之前还需要修改配置。<br>
 第一：打开项目根目录下的 _config.yml 配置文件配置参数。拉到文件末尾，填上如下配置（也可同时部署到多个仓库，后面再说）：</p>
-<p><img src="./Hello-Hexo/deployment.png" alt="avatar"></p>
+<p><img src="https://i.loli.net/2019/07/02/5d1b00deb0aa153603.png" alt="deployment.png"></p>
 <p>最后执行以下命令就可以部署上传啦，以下 g 是 generate 缩写，d 是 deploy 缩写：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
 <h1 id="开始写作">开始写作</h1>
@@ -360,13 +364,6 @@
                 
 
                 <!-- Friends Blog -->
-                
-                <hr>
-                <h5>FRIENDS</h5>
-                <ul class="list-inline">
-
-                    
-                </ul>
                 
             </div>
         </div>
