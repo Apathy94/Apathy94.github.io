@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/article/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+        <lastmod>2019-07-08T14:10:16.693Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite.com/article/Hello-Hexo/</loc>
         <lastmod>2019-07-02T07:01:42.329Z</lastmod>
         <changefreq>weekly</changefreq>
